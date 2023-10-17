@@ -108,29 +108,29 @@ body{
   
   @media only screen and (max-width: 768px) {
     .calculator-container {
-      max-width: 76%; /* Adjust the width for smaller screens */
-      padding: 20px; /* Adjust padding for smaller screens */
+      max-width: 76%; 
+      padding: 20px; 
     }
   
     .form-row {
-      flex-direction: column; /* Stack form rows vertically on smaller screens */
+      flex-direction: column;
     }
   
     .website-type, .features, .pages, .urgency {
-      width: 100%; /* Full width for smaller screens */
-      margin-bottom: 15px; /* Add some spacing between form elements */
+      width: 100%; 
+      margin-bottom: 15px; 
     }
   
     .terms-checkbox {
-      margin: 10px 0; /* Adjust margin for smaller screens */
+      margin: 10px 0;
     }
   
     button {
-      width: 100%; /* Full width for smaller screens */
+      width: 100%;
     }
   
     .btn-icon {
-      width: 20px; /* Adjust the width of the icon for smaller screens */
+      width: 20px;
     }
   }
   
