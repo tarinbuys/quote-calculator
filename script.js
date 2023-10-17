@@ -5,34 +5,33 @@ function calculateQuote() {
     const numberOfPages = parseInt(document.getElementById('pages').value);
     const urgencyLevel = parseInt(document.getElementById('urgency').value);
   
-    // Base Price for the selected website type (adjust these values based on your pricing)
+    // Base Price for the selected website type 
     let basePrice = 0;
     switch (websiteType) {
       case 'basic':
-        basePrice = 5000; // Adjust as needed
+        basePrice = 5000;
         break;
       case 'portfolio':
-        basePrice = 10000; // Adjust as needed
+        basePrice = 10000; 
         break;
       case 'e-commerce':
-        basePrice = 15000; // Adjust as needed
+        basePrice = 15000; 
         break;
-      // Add more cases as needed
+    
     }
   
     // Additional Features Price
     let additionalFeaturesPrice = 0;
     const featurePrices = {
-      responsive: 2000, // Adjust as needed
-      'custom-design': 5000, // Adjust as needed
-      // Add more features and prices as needed
-    };
+      responsive: 2000,
+      'custom-design': 5000, 
+         };
     selectedFeatures.forEach(feature => {
       additionalFeaturesPrice += featurePrices[feature] || 0;
     });
   
     // Page Price
-    const costPerPage = 1000; // Adjust as needed
+    const costPerPage = 1000;
     const pagePrice = numberOfPages * costPerPage;
   
     // Urgency Cost
