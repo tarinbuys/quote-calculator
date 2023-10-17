@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.calculator-container {
+    max-width: 1150px;
+    max-height: 681px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  
+  select,
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #E2E5E8;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #949494;
+}
+  .form-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+
+  .website-type, .features, .pages, .urgency {
+    width: 330px;
+  }
+
+  .urgency-level-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+  }
+
+  .checkbox {
+    width: 10px;
+  }
+
+  .terms{
+    font-weight: 400;
+  }
+  .terms-checkbox {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .bold{
+    font-weight: 600;
+  }
+
+  button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    width: 272px;
+    background-color: #4F01D3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .btn-icon{
+    width: 30px;
+    height: auto;
+    padding-left: 15px;
+    margin-bottom: -10px;
+  }
+  
+  #quote-results {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .calculator-container {
+      max-width: 76%; /* Adjust the width for smaller screens */
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .form-row {
+      flex-direction: column; /* Stack form rows vertically on smaller screens */
+    }
+  
+    .website-type, .features, .pages, .urgency {
+      width: 100%; /* Full width for smaller screens */
+      margin-bottom: 15px; /* Add some spacing between form elements */
+    }
+  
+    .terms-checkbox {
+      margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+  
+    button {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .btn-icon {
+      width: 20px; /* Adjust the width of the icon for smaller screens */
+    }
+  }
+  
